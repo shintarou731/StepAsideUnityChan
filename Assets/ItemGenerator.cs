@@ -46,12 +46,10 @@ public class ItemGenerator : MonoBehaviour
         // unityちゃんのz方向の現在地
         float unitychan_z = this.unitychan.transform.position.z;
 
-
-
         // unityちゃんの距離に応じてアイテムを生成
         if (unitychan_z > startPos　&& goalPos > unitychan_z + itemPos)
         {
-            // アイテム生成に必要な次の到達地点を設定
+            // アイテム生成に必要な到達地点を再設定
             startPos += item_interval;
 
             // どの位置にアイテムを出すのかランダムに設定
